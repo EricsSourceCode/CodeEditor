@@ -1,0 +1,192 @@
+Now I saved this file too.
+
+Move everything to C++.
+
+
+
+
+
+Owe Steve 13 plus tax.  The Book Mine.
+
+
+
+per centage
+
+
+https://en.wikipedia.org/wiki/Direct_Rendering_Manager
+
+
+https://en.wikipedia.org/wiki/Geodesy
+
+What's that Secure Boot thing in Windows Security?
+Settings
+Update and Security
+Recovery
+Advanced Startup
+
+
+Use <p> in my notes dictionary.  And other tags.
+"This" +
+"<p>" +
+"that";
+
+
+Longitude: "Measuring from the intersection of the ecliptic with the equator."  So how does that change with time?
+
+
+// GitHub:
+// Division.cs" />
+// ModularReduction.cs" />
+// MainForm.cs">
+// Post CRTMath too.
+// SquareRoot.cs
+
+
+
+
+Divide 10000000000000 by something.
+
+https://en.wikipedia.org/wiki/Covariant_derivative
+
+Mexican newspaper
+https://www.cronica.com.mx/
+
+
+Don't buy from sellers:
+SERENODEX
+Iconik Direct
+
+
+Check ImageDrawForm.cs.
+Doing the DrawBitmap code will help me with future RSA stuff too.
+Do DrawBitmap.cs and draw some longitude lines on the Earth.
+
+
+
+
+
+Fleece Pullover.
+Make sure it's not cotton.
+If it's a different seller it's a different order.
+
+
+"Linux PCs are growing in popularity for professional programmers and Dell continues to back them."
+And apparently there's more Linux on Azure than Windows Server.
+
+executables in ELF format
+
+
+
+https://en.wikipedia.org/wiki/Vector_calculus_identities
+
+
+
+I have the velocity vectors in the JPL data, so I can use that
+for the coordinate system at that point in its path.
+
+
+At that basic level of parsing objects, Begin and End is an object.  A subclass of that BeginEnd object would figure out the right method to begin and end it.  It's like making a shape object, but subclasses of that shape object know how to draw themselves in the right shape.  The BeginEnd objects know how to find the right beginning and ending.
+
+
+It's not "open" if it's not understandable.  If it's obfuscated.
+Security means it's clear and understandable.
+It doesn't do unintended things like run over a person.
+If a company makes a big investment, the security of their investment really means the code has to be open and understandable.
+
+
+
+
+
+https://github.com/ericchauvin
+https://github.com/eric7apps
+
+
+
+
+
+Climate Center lady.
+https://www.depts.ttu.edu/csc/
+
+
+OpenJDK
+
+Make a blog section to explain open source alternatives for languages.
+
+_Now_ I appreciate open source after Java became very profitable and Microsoft went in to Azure and the clippy character editor.
+
+Put in an array four bits: Accum out, Carry out, M1, M2.  Four more bits to represent the unknown values.
+
+From those arrays, like single M1[x] array, get 6 bits.
+
+int FindBits( byte? uint? SixBits )
+
+return FoundSixBits;
+
+
+Then set the arrays from those bits.
+
+
+
+Carry In, Accum in, M1, M2, Carry Out, Accum Out.
+  Do all possible patterns like:
+200000
+020000
+002000
+
+220000
+202000
+200200
+
+Like shower curtain rings where you can move past empty zeros.
+
+
+
+
+reciprocal vectors
+
+arXiv.org
+
+
+
+
+Do the subtraction each time on the division.
+
+
+Modular Reduction algorithm is a Division Algorithm.  Sort of.
+
+
+Make better division algorithms.
+
+
+
+Make a blog on blogspot with sections: Top, Project names.  Then edit each one for updates.
+
+
+
+
+https://public.nrao.edu/visit/very-large-array/
+
+
+Vector Calculus.
+
+rTHnl
+
+
+https://en.wikipedia.org/wiki/CPUID
+
+
+
+
+For a matrix
+For a matrix
+
+Julia Robinson:
+P is a prime if:
+
+P = s + 1 = r + 2
+q = s! (s factorial)
+ap - bq = 1
+
+
+
+

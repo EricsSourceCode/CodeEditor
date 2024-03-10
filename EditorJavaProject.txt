@@ -1,0 +1,12 @@
+buildfile	C:\Eric\Main\CodeEditor4\BuildProj.bat
+executablefile	C:\Eric\Main\CodeEditor4\RunApp.bat
+projectdirectory	\Eric\Main\CodeEditor4
+recentfile1	C:\Eric\Main\CodeEditor4\MainApp.java
+recentfile2	C:\Eric\Main\CodeEditor4\MainWindow.java
+recentfile3	C:\Eric\Main\CodeEditor4\FileSaveDialog.java
+recentfile4	C:\Eric\Main\CodeEditor4\FilePickDialog.java
+recentfile5	C:\Eric\Main\CodeEditor4\FileSearchRunnable.java
+recentfile6	C:\Eric\Main\CodeEditor4\FileUtility.java
+recentfile7	C:\Eric\Main\Docs\Notes.txt
+recentfile8	C:\Eric\Main\CodeEditor4\BuildProj.bat
+recentfile9	\Eric\Main\CodeEditor4\CaretWide.java

@@ -1,0 +1,6 @@
+MainWindow.java:214: error: cannot find symbol
+    bottomPanel.setBackground( Color.bluel );
+                                    ^
+  symbol:   variable bluel
+  location: class Color
+1 error

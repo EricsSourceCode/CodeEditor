@@ -1,0 +1,35 @@
+For a matrix, the first subscript is the row, the
+second subscript is the column.
+
+Set up an array like this:
+
+Tensor:
+The rows of S appear as superscripts.
+Columns as subscripts.
+Row vectors store basis vectors.
+Column vectors store coordinates.
+
+
+
+Make Vector operators:
+MathVector3
+
+MathQuaternion
+
+MathMatrix4
+
+Any size matrix:
+MathMatrix:
+https://en.wikipedia.org/wiki/Matrix_(mathematics)
+
+https://en.wikipedia.org/wiki/Determinant
+
+
+
+This is modular reduction:
+Remainder from Mod32() or Mod64() is a modular
+reduction.
+
+
+
+//
