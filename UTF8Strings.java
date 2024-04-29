@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2018 - 2020.
+// Copyright Eric Chauvin 2018 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 
@@ -66,8 +74,8 @@
         // Big 5 bits.
         byte bigByte = (byte)((fullChar >> 6) & 0x1F);
 
-        bigByte |= 0xC0; // Mark it as the beginning byte.
-        smallByte |= 0x80; // Mark it as a continuing byte.
+        bigByte |= (byte)0xC0; // Mark it as the beginning byte.
+        smallByte |= (byte)0x80; // Mark it as a continuing byte.
         result[where] = bigByte;
         where++;
         result[where] = smallByte;
@@ -81,9 +89,9 @@
         byte byte2 = (byte)((fullChar >> 6) & 0x3F);
         byte bigByte = (byte)((fullChar >> 12) & 0x0F); // Biggest 4 bits.
 
-        bigByte |= 0xE0; // Mark it as the beginning byte.
-        byte2 |= 0x80; // Mark it as a continuing byte.
-        byte3 |= 0x80; // Mark it as a continuing byte.
+        bigByte |= (byte)0xE0; // Mark it as the beginning byte.
+        byte2 |= (byte)0x80; // Mark it as a continuing byte.
+        byte3 |= (byte)0x80; // Mark it as a continuing byte.
         result[where] = bigByte;
         where++;
         result[where] = byte2;
@@ -210,4 +218,3 @@
 
 
   }
-

@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2019 - 2023.
+// Copyright Eric Chauvin 2019 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 
@@ -46,7 +54,8 @@ import java.awt.Rectangle;
 
 
 
-public class MainWindow extends JFrame implements
+public final class MainWindow extends JFrame
+                            implements
                             WindowListener,
                             WindowFocusListener,
                             WindowStateListener,
@@ -57,7 +66,7 @@ public class MainWindow extends JFrame implements
   public static final long serialVersionUID = 1;
   private MainApp mApp;
   private String uiThreadName = "";
-  private Thread fileThread;
+  // private Thread fileThread;
   private Font mainFont;
   private int mainFontSize = 8; // See below.
   private JTabbedPane mainTabbedPane;
@@ -499,14 +508,14 @@ public class MainWindow extends JFrame implements
     menuItem.setFont( mainFont );
     fileMenu.add( menuItem );
 
-    menuItem = new JMenuItem( "Search Files" );
+    // menuItem = new JMenuItem( "Search Files" );
     // menuItem.setMnemonic( KeyEvent.VK_U );
-    menuItem.setActionCommand( "FileSearchFiles" );
-    menuItem.addActionListener( this );
-    menuItem.setForeground( Color.white );
-    menuItem.setBackground( Color.black );
-    menuItem.setFont( mainFont );
-    fileMenu.add( menuItem );
+    // menuItem.setActionCommand( "FileSearchFiles" );
+    // menuItem.addActionListener( this );
+    // menuItem.setForeground( Color.white );
+    // menuItem.setBackground( Color.black );
+    // menuItem.setFont( mainFont );
+    // fileMenu.add( menuItem );
 
     menuItem = new JMenuItem( "Exit" );
     menuItem.setMnemonic( KeyEvent.VK_X );
@@ -844,6 +853,7 @@ Contol V is the standard paste.
       return;
       }
 
+/*
     if( command == "FileSearchFiles" )
       {
       String editedText = showEditTextDialog();
@@ -860,6 +870,7 @@ Contol V is the standard paste.
 
       return;
       }
+*/
 
     if( command == "FileExit" )
       {
@@ -1036,8 +1047,12 @@ Contol V is the standard paste.
     // java.lang.Process
 
     buildTimerCount = 0;
+    String[] cmdArray = { runFile,
+                          "", "" };
+
     buildProcess = Runtime.getRuntime().exec(
-                                      runFile );
+                         // runFile );
+                         cmdArray );
     if( buildProcess == null )
       {
       showStatus( "exec() returned null for the Build Process." );
@@ -2384,10 +2399,15 @@ I would have to fix the cursor to make this work.
 
 
 
+/*
+
   private void listFiles( String dir,
                           String textToFind,
                           boolean recursive )
     {
+====  private Thread fileThread;
+
+
     try
     {
     if( fileThread != null )
@@ -2419,7 +2439,7 @@ I would have to fix the cursor to make this work.
       mApp.showStatus( e.getMessage() );
       }
     }
-
+*/
 
 
   }

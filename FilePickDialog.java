@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2022 - 2023.
+// Copyright Eric Chauvin 2022 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 
@@ -35,7 +43,7 @@ import javax.swing.JScrollPane;
 
 
 
-public class FilePickDialog extends JDialog
+public final class FilePickDialog extends JDialog
                    implements ActionListener,
                    ListSelectionListener
            // ImageObserver, MenuContainer,
@@ -177,7 +185,7 @@ public class FilePickDialog extends JDialog
       {
       int where = fileList.getFirstVisibleIndex();
       if( (where - scrollBy) > 0 )
-        fileList.ensureIndexIsVisible( 
+        fileList.ensureIndexIsVisible(
                            where - scrollBy );
       else
         fileList.ensureIndexIsVisible( 0 );

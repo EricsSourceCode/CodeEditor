@@ -20,5 +20,5 @@ del *.class
 cls
 Javac -Xlint -Xstdout Build.log *.java
 
-type Build.log
+rem type Build.log
 rem don't use pause

@@ -17,7 +17,7 @@ import java.io.File;
 
 
 
-public class TreePanel extends JPanel
+public final class TreePanel extends JPanel
                 implements TreeSelectionListener
   {
   // It needs to have a version UID since it's

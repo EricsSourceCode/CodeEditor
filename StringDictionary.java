@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2019 - 2020.
+// Copyright Eric Chauvin 2019 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 // An identifier name like Table is different from the
@@ -12,8 +20,18 @@
 
 
 
-public class StringDictionary
+// For Serializable:
+import java.io.Serializable;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+
+
+public class StringDictionary implements
+                              Serializable
   {
+  public static final long serialVersionUID = 1;
   private MainApp mApp;
   private int keySize = 127;
   private StringDictionaryLine lineArray[];
@@ -42,6 +60,24 @@ public class StringDictionary
       keySize = smallKeySize;
 
     lineArray = new StringDictionaryLine[keySize];
+    }
+
+
+
+  // For Serializable:
+  private void writeObject(
+                   ObjectOutputStream stream )
+                           throws IOException
+    {
+    stream.defaultWriteObject();
+    }
+
+  private void readObject(
+                     ObjectInputStream stream )
+                     throws IOException,
+                     ClassNotFoundException
+    {
+    stream.defaultReadObject();
     }
 
 
@@ -183,4 +219,3 @@ public class StringDictionary
 
 
   }
-

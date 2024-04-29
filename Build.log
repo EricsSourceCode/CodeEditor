@@ -1,0 +1,7 @@
+MainWindow.java:84: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+  private Process buildProcess = null;
+                  ^
+MainWindow.java:87: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+  private Process executableProcess = null;
+                  ^
+2 warnings

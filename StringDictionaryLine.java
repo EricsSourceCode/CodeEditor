@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2019 - 2022.
+// Copyright Eric Chauvin 2019 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 
@@ -6,8 +14,19 @@
 // case-sensitive.
 
 
-public class StringDictionaryLine
+// For Serializable:
+import java.io.Serializable;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
+
+
+
+public class StringDictionaryLine implements
+                              Serializable
   {
+  public static final long serialVersionUID = 1;
+
   private String[] keyArray;
   private String[] valueArray;
   private int[] sortIndexArray;
@@ -21,6 +40,25 @@ public class StringDictionaryLine
     valueArray = new String[8];
     sortIndexArray = new int[8];
     resetSortIndexArray();
+    }
+
+
+
+  // For Serializable:
+  private void writeObject(
+                   ObjectOutputStream stream )
+                           throws IOException
+    {
+    stream.defaultWriteObject();
+    }
+
+
+  private void readObject(
+                     ObjectInputStream stream )
+                     throws IOException,
+                     ClassNotFoundException
+    {
+    stream.defaultReadObject();
     }
 
 
@@ -71,7 +109,7 @@ public class StringDictionaryLine
     // "bubble up" from the very bottom.  So
     // the maximum number of outer loops here
     // is arrayLast number of times.
-    for( int count = 0; count < arrayLast; 
+    for( int count = 0; count < arrayLast;
                                        count++ )
       {
       if( !bubbleSortOnePass() )
@@ -126,7 +164,7 @@ public class StringDictionaryLine
 
 
 
-  public void setString( String key, 
+  public void setString( String key,
                                   String value )
     {
     int index = getIndexOfKey( key );

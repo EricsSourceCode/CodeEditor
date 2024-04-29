@@ -1,1 +1,1 @@
-currentprojectfile	\Eric\Main\TlsServer\TlsServerProject.txt
+currentprojectfile	\Eric\Main\AINews\AINewsProject.txt

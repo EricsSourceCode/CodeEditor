@@ -1,4 +1,11 @@
-// Copyright Eric Chauvin 2021.
+// Copyright Eric Chauvin 2021 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
 
 
 
@@ -7,11 +14,13 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 
+
+
 // A long is about 292,471,208 Years.
 
 
 
-public class ECTime
+public final class ECTime
   {
   private GregorianCalendar GCalendarLocal;
   private int HourOffset = 0;

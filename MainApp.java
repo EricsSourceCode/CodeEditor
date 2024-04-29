@@ -1,16 +1,33 @@
-// Copyright Eric Chauvin 2019 - 2023.
+// Copyright Eric Chauvin 2019 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
 
 
 
 import javax.swing.SwingUtilities;
 import java.io.File;
 
+// For Serializable:
+import java.io.Serializable;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;
 
 
-public class MainApp implements Runnable
+
+public class MainApp implements Runnable,
+                                Serializable
   {
   public static final String versionDate =
-                              "10/2/2023";
+                              "4/29/2024";
+
+  public static final long serialVersionUID = 1;
+
   public static final char pathSepChar =
                             File.separatorChar;
   private MainWindow mainWin;
@@ -25,6 +42,23 @@ public class MainApp implements Runnable
     {
     MainApp mApp = new MainApp( args );
     SwingUtilities.invokeLater( mApp );
+    }
+
+
+  // For Serializable:
+  private void writeObject(
+                   ObjectOutputStream stream )
+                           throws IOException
+    {
+    stream.defaultWriteObject();
+    }
+
+  private void readObject(
+                     ObjectInputStream stream )
+                     throws IOException,
+                     ClassNotFoundException
+    {
+    stream.defaultReadObject();
     }
 
 

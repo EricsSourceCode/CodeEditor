@@ -1,4 +1,12 @@
-// Copyright Eric Chauvin 2022 - 2023.
+// Copyright Eric Chauvin 2022 - 2024.
+
+
+
+// This is licensed under the GNU General
+// Public License (GPL).  It is the
+// same license that Linux has.
+// https://www.gnu.org/licenses/gpl-3.0.html
+
 
 
 
@@ -35,7 +43,7 @@ import javax.swing.JScrollPane;
 
 
 
-public class FileSaveDialog extends JDialog
+public final class FileSaveDialog extends JDialog
                    implements ActionListener,
                    ListSelectionListener
            // ImageObserver, MenuContainer,
